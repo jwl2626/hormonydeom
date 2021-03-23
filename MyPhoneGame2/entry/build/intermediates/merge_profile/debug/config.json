@@ -1,0 +1,60 @@
+{
+    "app": {
+        "bundleName": "com.huawei.myphonegame2",
+        "vendor": "huawei",
+        "apiVersion": {
+            "compatible": 3,
+            "target": 4,
+            "releaseType": "Beta1"
+        },
+        "version": {
+            "code": 1,
+            "name": "1.0"
+        }
+    },
+    "deviceConfig": {
+        
+    },
+    "module": {
+        "name": ".MyApplication",
+        "deviceType": [
+            "phone"
+        ],
+        "distro": {
+            "deliveryWithInstall": true,
+            "moduleName": "entry",
+            "moduleType": "entry"
+        },
+        "abilities": [
+            {
+                "name": "com.huawei.myphonegame2.MainAbility",
+                "description": "$string:mainability_description",
+                "icon": "$media:icon",
+                "label": "\u4fc4\u7f57\u65af\u65b9\u5757",
+                "type": "page",
+                "launchType": "standard",
+                "metaData": {
+                    "customizeData": [
+                        {
+                            "name": "hwc-theme",
+                            "value": "androidhwext:style/Theme.Emui.Light.NoTitleBar",
+                            "extra": ""
+                        }
+                    ]
+                },
+                "orientation": "unspecified",
+                "skills": [
+                    {
+                        "actions": [
+                            "action.system.home"
+                        ],
+                        "entities": [
+                            "entity.system.home"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "package": "com.huawei.myphonegame2"
+    }
+}
